@@ -236,19 +236,30 @@ img {
   background: var(--button-to-order-active-clr);
 }
 
-.features .feature-title {
+.features {
+  /*display: flex;*/
+}
+.features-list {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.feature-item {
+  width: 270px;
+}
+.feature-title {
+  margin-bottom: 10px;
   text-transform: uppercase;
+  color: var(--fontcolorh3);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
 }
 .feature-text {
   line-height: 1.71;
-}
-.features-list {
-  /**/
-}
-.feature {
+  width: 270px;
+  letter-spacing: 0.03em;
 }
 
 /*
