@@ -108,7 +108,7 @@ img {
   color: var(--fontcolorh3);
   line-height: 1.17;
 }
-.feature-title,
+/*.feature-title,*/
 .team-person-title {
   font-size: 18px;
   font-weight: 500;
@@ -238,6 +238,8 @@ img {
 
 .features {
   /*display: flex;*/
+  padding-left: 215px;
+  padding-right: 215px;
 }
 .features-list {
   display: flex;
@@ -262,15 +264,23 @@ img {
   letter-spacing: 0.03em;
 }
 
-/*
-.about {}
-.about-list {}
-.about-item {}
-.about-image {}
-*/
+.about {
+  margin-top: 0;
+  padding-top: 0;
+}
+.about-list {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.about-item {
+}
+.about-image {
+}
 
 .team {
   background: var(--our-command-bg);
+  /*padding-top: 0;*/
 }
 .text-wrapper {
   /*padding-bottom: 30px;
