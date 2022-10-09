@@ -99,13 +99,7 @@ img {
 .team-person-text {
   color: var(--fontcolordescrp);
 }
-.hero-title {
-  font-size: 44px;
-  font-weight: 900;
-  color: var(--whitetxt);
-  /*color: var(--fontcolorh3);*/
-  line-height: 1.36;
-}
+
 .features-title,
 .about-title,
 .team-title {
@@ -170,6 +164,7 @@ img {
 }
 .logo {
   font-size: 26px;
+  letter-spacing: 0.03em;
   text-decoration: none;
   font-family: var(--bannerfont);
   color: inherit; /*var(--fontblack);*/
@@ -197,6 +192,50 @@ img {
 .all-big-chars {
   text-transform: uppercase;
 }
+.hero {
+  width: 100%;
+  background-color: var(--bannerclr);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+}
+
+.hero-title {
+  max-width: 696px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 44px;
+  letter-spacing: 0.06em;
+  font-weight: 900;
+  color: var(--whitetxt);
+  line-height: 1.36;
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 10px 32px;
+  min-width: 216px;
+  font-family: inherit;
+  color: var(--whitetxt);
+  /*border-collapse: collapse;*/
+  border: none;
+  background-color: var(--bluebtn);
+  cursor: pointer;
+  box-shadow: 0px 4px 4px var(--button-to-order-box-shadow-color);
+  font-size: 16px;
+  /*width: 216px;*/
+  /*height: 50px;*/
+  border-radius: 4px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+.hero-button:hover,
+.hero-button:focus {
+  background: var(--button-to-order-active-clr);
+}
+
 .features .feature-title {
   text-transform: uppercase;
   font-weight: 700;
@@ -218,28 +257,6 @@ img {
 .about-item {}
 .about-image {}
 */
-.hero {
-  background-color: var(--bannerclr);
-}
-
-.hero-button {
-  font-family: inherit;
-  color: var(--whitetxt);
-  border-collapse: collapse;
-  background-color: var(--bluebtn);
-  cursor: pointer;
-  box-shadow: 0px 4px 4px var(--button-to-order-box-shadow-color);
-  font-size: 16px;
-  width: 216px;
-  height: 50px;
-  border-radius: 4px;
-  font-weight: 500;
-  letter-spacing: 0.06em;
-}
-.hero-button:hover,
-.hero-button:focus {
-  background: var(--button-to-order-active-clr);
-}
 
 .team {
   background: var(--our-command-bg);
