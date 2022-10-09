@@ -238,8 +238,8 @@ img {
 
 .features {
   /*display: flex;*/
-  padding-left: 215px;
-  padding-right: 215px;
+  /*padding-left: 215px;
+  padding-right: 215px;*/
 }
 .features-list {
   display: flex;
@@ -263,10 +263,18 @@ img {
   width: 270px;
   letter-spacing: 0.03em;
 }
-
+/*.section-dimensions*/
+.about-title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--fontcolorh3);
+  text-align: center;
+}
 .about {
   margin-top: 0;
-  padding-top: 0;
+  /*padding-top: 0;*/
 }
 .about-list {
   display: flex;
