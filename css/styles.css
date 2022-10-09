@@ -1,3 +1,6 @@
+html {
+  box-sizing: border-box;
+}
 :root {
   --bgcolor: #f5f5f5;
   --bg-color-grey: #f5f4fa;
@@ -23,22 +26,51 @@
   --button-to-order-box-shadow-color: rgba(0, 0, 0, 0.15);
   --opasity-const: 0.6;
 }
-body {
-  background-color: var(--white-bg);
-  font-family: var(--mainfont);
-  font-size: 14px;
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
-/*.h1,
+.h1,
 .h2,
 .h3,
 .h4,
+.h5,
+.h6,
 .ul,
 .p {
   margin: 0;
   padding: 0;
-}*/
+}
 
+body {
+  background-color: var(--white-bg);
+  font-family: var(--mainfont);
+  font-size: 14px;
+  color: var(--fontblack); /*--fontcolordescrp*/
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid tomato;
+}
+/*.contact-list*/
+.nav-flex,
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.contact-list {
+  display: flex;
+  margin-left: auto;
+  gap: 50px;
+}
 .feature-text,
 .team-person-text {
   color: var(--fontcolordescrp);
