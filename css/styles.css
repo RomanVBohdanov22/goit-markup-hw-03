@@ -226,8 +226,6 @@ img {
   background: var(--button-to-order-active-clr);
 }
 
-/*.about-title,*/
-
 .features {
   /*display: flex;*/
   /*padding-left: 215px;
@@ -305,8 +303,8 @@ img {
   padding-top: 30px;
   width: 270px;
   border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  /*box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);*/
   text-align: center;
   background: var(--white-bg);
 }
@@ -324,27 +322,39 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
+/*.feature-item {
+  width: 270px;
+}*/
 .filters {
   /*background-color: var(--bg-color-grey);*/
 }
-.filters-list .filter-button {
-  border-collapse: collapse;
-  height: 38px;
+.filters-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 34px;
+}
+.filter-button {
+  border: none;
+  border-radius: 4px;
+  padding: 6px 22px;
   cursor: pointer;
   background-color: var(--greybtbn);
+  color: var(--fontcolorh3);
   font-size: 16px;
   font-family: inherit;
   font-weight: 500;
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
-  border-radius: 4px;
 }
 .filters-list .filter-button:hover,
-.filters-list .filter-button:focus,
-.filters-list .filter-button:active {
+.filters-list .filter-button:focus {
   background-color: var(--bluebtn);
   color: var(--whitetxt);
+  /* box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);*/
 }
 
 .cards {
@@ -366,7 +376,6 @@ img {
 }
 .card-wrapper {
   padding: 20px 24px;
-  /*width: calc(100% / 3 - 30px);*/
   border: 1px solid var(--background-card-color);
   background-color: var(--white-bg);
 }
