@@ -84,6 +84,9 @@ img {
   display: flex;
   align-items: center;
 }
+/*.nav-block {
+  display: block;
+}*/
 .contact-list {
   display: flex;
   margin-left: auto;
@@ -136,15 +139,27 @@ img {
 .footer .logo {
   display: inline-block;
   margin-bottom: 20 px;
+  margin: 0 auto;
 }
 .footer .link {
   line-height: 1.14;
   text-decoration: none;
   font-style: normal;
   color: var(--whitetxt);
+  vertical-align: middle;
 }
 .footer .contacts-item {
   opacity: var(--opasity-const);
+}
+
+.address-footer {
+  padding-left: 0px;
+  /*margin-top: 0px;*/
+  /*display: inline-block;*/
+  /*width: 231px;*/
+  margin: 0 auto;
+}
+.address-footer > .link {
 }
 
 .nav-list {
@@ -370,7 +385,7 @@ img {
 }
 .cards-item {
   /*background-color: var(--background-card-color);*/
-  width: calc(100% / 3 - 30px);
+  width: calc(100% / 3) - 30px;
   margin-right: 30px;
   margin-bottom: 30px;
 }
