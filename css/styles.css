@@ -83,6 +83,7 @@ img {
 .navigation {
   display: flex;
   align-items: center;
+  flex-direction: row;
 }
 /*.nav-block {
   display: block;
@@ -136,13 +137,13 @@ img {
   padding-bottom: 60px;
   color: var(--whitetxt);
   background-color: var(--bannerclr);
-  /*margin-left: 0px;
+  display: flex;
+  align-items: left;
   flex-direction: column;
-  text-align: left;*/
 }
 .footer .logo {
   display: inline-block;
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
   /*margin: 0 auto;*/
 }
 .footer .link {
@@ -157,13 +158,10 @@ img {
 }
 
 .address-footer {
-  /*margin-left: 0px;
-  flex-direction: column;
-  text-align: left;*/
 }
 .address-footer .link {
   /*padding-left: 0px;*/
-  display: inline-block;
+  /*display: inline-block;*/
   /*max-width: 231px;*/
   margin: 0 auto;
   outline: 2px solid olivedrab; /*Репета-стайл*/
@@ -386,13 +384,14 @@ img {
   display: flex;
   flex-wrap: wrap;
   /*flex-direction: row;*/
-  margin-bottom: -30px;
-  margin-right: -30px;
+  /*max-width: 1200px;*/
+  /*margin-bottom: -30px;
+  margin-right: -30px;*/
   /*gap: 30px;*/
 }
 .cards-item {
   /*background-color: var(--background-card-color);*/
-  width: (calc(100% / 3) - 30px);
+  width: calc(100% / 3) - 30px;
   margin-right: 30px;
   margin-bottom: 30px;
 }
