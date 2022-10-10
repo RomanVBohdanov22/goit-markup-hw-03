@@ -100,22 +100,6 @@ img {
   color: var(--fontcolordescrp);
 }
 
-.features-title,
-.about-title,
-.team-title {
-  font-size: 36px;
-  font-weight: 700;
-  color: var(--fontcolorh3);
-  line-height: 1.17;
-}
-/*.feature-title,*/
-.team-person-title {
-  font-size: 18px;
-  font-weight: 500;
-  color: var(--fontcolorh3);
-  line-height: 1.19;
-}
-
 .header {
   border-bottom: 1px solid var(--header-frame-color);
 }
@@ -242,6 +226,8 @@ img {
   background: var(--button-to-order-active-clr);
 }
 
+/*.about-title,*/
+
 .features {
   /*display: flex;*/
   /*padding-left: 215px;
@@ -269,7 +255,11 @@ img {
   width: 270px;
   letter-spacing: 0.03em;
 }
-/*.section-dimensions*/
+
+.about {
+  margin-top: 0;
+  /*padding-top: 0;*/
+}
 .about-title {
   margin-bottom: 50px;
   font-size: 36px;
@@ -278,10 +268,7 @@ img {
   color: var(--fontcolorh3);
   text-align: center;
 }
-.about {
-  margin-top: 0;
-  /*padding-top: 0;*/
-}
+
 .about-list {
   display: flex;
   flex-direction: row;
@@ -292,8 +279,19 @@ img {
 .about-image {
 }
 
+.features-title,
+.team-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--fontcolorh3);
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
 .team {
   background-color: var(--our-command-bg);
+  margin-top: 0;
   /*padding-top: 0;*/
 }
 .team-list {
@@ -302,9 +300,28 @@ img {
   gap: 30px;
 }
 .text-wrapper {
-  /*padding-bottom: 30px;
-  padding-top: 30px;*/
+  padding-bottom: 30px;
+  padding-top: 30px;
+  width: 270px;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  text-align: center;
   background: var(--white-bg);
+}
+.team-person-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--fontcolorh3);
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.team-person-text {
+  font-size: 16px;
+  color: var(--fontcolordescrp);
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 .filters {
   /*background-color: var(--bg-color-grey);*/
