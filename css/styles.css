@@ -351,6 +351,12 @@ img {
   /**/
 }
 .cards-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-bottom: -30px;
+  margin-right: -30px;
+  gap: 30px;
 }
 .cards-item {
   background-color: --background-card-color;
