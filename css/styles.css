@@ -391,7 +391,8 @@ img {
   width: 270px;
 }*/
 .filters {
-  margin-top: 94px;
+  margin-bottom: 94px;
+  padding-top: 94px;
 }
 .filters-list {
   display: flex;
