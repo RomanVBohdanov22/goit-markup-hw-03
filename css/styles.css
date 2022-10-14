@@ -77,23 +77,6 @@ img {
   padding-right: 15px;
   outline: 2px solid tomato; /*Репета-стайл*/
 }
-
-/*.contact-list*/
-.nav-flex,
-.navigation {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-}
-/*.nav-block {
-  display: block;
-}*/
-
-.contacts-list {
-  display: flex;
-  margin-left: auto;
-  gap: 50px;
-}
 .section-dimensions {
   width: 100%;
   padding-top: 94px;
@@ -102,6 +85,35 @@ img {
   margin-right: 0px;*/
   outline: 2px solid palegreen; /*Репета-стайл*/
 }
+/*.contact-list*/
+.current-page-link
+{
+  /*color: var(--bluetextclr);*/
+  outline: 2px solid var(--bluetextclr); /*Репета-стайл*/
+}
+
+.header-flex-box, 
+.nav-contacts-flex,
+.navigation {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  
+}
+.nav-contacts-flex {
+  margin-left: auto;
+  margin-right: 215px;
+}
+/*.nav-block {
+  display: block;
+}*/
+
+.contacts-list {
+  display: flex;
+  
+  gap: 50px;
+}
+
 .feature-text,
 .team-person-text {
   color: var(--fontcolordescrp);
@@ -229,7 +241,13 @@ img {
 .address-item > .address-link:hover  {
   color: var(--bluetextclr);
 }
-/*.no-marker-list*/ 
+.nav-item > .link,
+.contacts-item > .link
+/*, .address-item > .address-link */
+{
+  display: block;
+  padding: 32px 0;
+}
 .all-big-chars {
   text-transform: uppercase;
 }
