@@ -18,6 +18,8 @@ html {
   --greybtbn: #f4f5fa;
   --background-card-color: #eeeeee;
   --header-frame-color: #ececec;
+  --card-item-gap: 30px;
+  --card-item-rows-number: 3;
 
   /*--blue-order-button-active: #188ce8;*/
   /*--logoshadow: 0px 4px 4px rgba(0, 0, 0, 0.25); /*text-shadow*/
@@ -81,36 +83,31 @@ img {
   width: 100%;
   padding-top: 94px;
   padding-bottom: 94px;
-  /*margin-left: 0px;
-  margin-right: 0px;*/
+  margin-left: 0px;
+  margin-right: 0px;
   outline: 2px solid palegreen; /*Репета-стайл*/
 }
 /*.contact-list*/
-.current-page-link
-{
+.current-page-link {
   /*color: var(--bluetextclr);*/
   outline: 2px solid var(--bluetextclr); /*Репета-стайл*/
 }
 
-.header-flex-box, 
+.header-flex-box,
 .nav-contacts-flex,
 .navigation {
   display: flex;
   align-items: center;
   flex-direction: row;
-  
 }
 .nav-contacts-flex {
   margin-left: auto;
   margin-right: 215px;
 }
-/*.nav-block {
-  display: block;
-}*/
 
 .contacts-list {
   display: flex;
-  
+
   gap: 50px;
 }
 
@@ -180,14 +177,11 @@ img {
 }*/
 .address-footer {
   font-style: inherit;
-  
 }
-.address-item:not(:last-child)
-{
+.address-item:not(:last-child) {
   margin-bottom: 9px;
 }
-.address-item:nth-child(n+2)
-{
+.address-item:nth-child(n + 2) {
   color: var(--whitetxt);
   opacity: var(--opasity-const);
 }
@@ -205,11 +199,10 @@ img {
   margin-left: 93px;
 }
 .header-logo {
-  padding 24px 0;
+  padding: 24px 0;
 }
-.footer-logo
-{
-  padding 24px 0;
+.footer-logo {
+  padding: 24px 0;
 }
 
 .logo {
@@ -232,18 +225,16 @@ img {
   cursor: pointer;
 }
 .nav-item > .link:active,
-.contacts-item > .link:active
-.address-item > .address-link:hover  {
+.contacts-item > .link:active .address-item > .address-link:hover {
   color: var(--bluetextclr);
 }
 .nav-item > .link:focus,
-.contacts-item > .link:focus
-.address-item > .address-link:hover  {
+.contacts-item > .link:focus .address-item > .address-link:hover {
   color: var(--bluetextclr);
 }
 .nav-item > .link,
 .contacts-item > .link
-/*, .address-item > .address-link */
+/*, .address-item > .address-link *//*розширення клікабельної зони*/
 {
   display: block;
   padding: 32px 0;
@@ -257,6 +248,7 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+  margin-top: 0;
 }
 
 .hero-title {
@@ -319,7 +311,7 @@ img {
 }
 .feature-text {
   line-height: 1.71;
-  width: 270px;
+  /*width: 270px;*/
   letter-spacing: 0.03em;
 }
 
@@ -348,6 +340,7 @@ img {
 
 .features-title,
 .team-title {
+  margin-top: 0;
   font-size: 36px;
   font-weight: 700;
   color: var(--fontcolorh3);
@@ -395,14 +388,18 @@ img {
   width: 270px;
 }*/
 .filters {
-  /*background-color: var(--bg-color-grey);*/
+  margin-top: 94px;
 }
 .filters-list {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding: 0;
+  margin: 0;
   gap: 8px;
-  margin-bottom: 34px;
+  /*
+  margin-top: 34px;*/
+  margin-bottom: 50px;
 }
 .filter-button {
   border: none;
@@ -432,17 +429,18 @@ img {
 .cards-list {
   display: flex;
   flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
   /*flex-direction: row;*/
-  /*max-width: 1200px;*/
-  /*margin-bottom: -30px;
-  margin-right: -30px;*/
+  margin-right: calc(-1 * var(--card-item-gap));
+  margin-bottom: calc(-1 * var(--card-item-gap));
   /*gap: 30px;*/
 }
 .cards-item {
   /*background-color: var(--background-card-color);*/
-  width: calc(100% / 3) - 30px;
-  margin-right: 30px;
-  margin-bottom: 30px;
+  flex-basis: calc(100% / var(--card-item-rows-number))-var(--card-item-gap);
+  margin-right: var(--card-item-gap);
+  margin-bottom: var(--card-item-gap);
 }
 .card-wrapper {
   padding: 20px 24px;
