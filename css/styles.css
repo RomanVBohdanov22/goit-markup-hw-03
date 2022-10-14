@@ -20,7 +20,8 @@ html {
   --header-frame-color: #ececec;
   --card-item-gap: 30px;
   --card-item-rows-number: 3;
-
+  --card-wrapper-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   /*--blue-order-button-active: #188ce8;*/
   /*--logoshadow: 0px 4px 4px rgba(0, 0, 0, 0.25); /*text-shadow*/
   --our-command-bg: #f5f4fa;
@@ -77,7 +78,7 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato; /*Репета-стайл*/
+  /*outline: 2px solid tomato; */ /*Репета-стайл*/
 }
 .section-dimensions {
   width: 100%;
@@ -85,11 +86,12 @@ img {
   padding-bottom: 94px;
   margin-left: 0px;
   margin-right: 0px;
-  outline: 2px solid palegreen; /*Репета-стайл*/
+  /*outline: 2px solid palegreen; */ /*Репета-стайл*/
 }
 /*.contact-list*/
 .current-page-link {
   /*color: var(--bluetextclr);*/
+  /*opacity: var(--opasity-const);*/
   outline: 2px solid var(--bluetextclr); /*Репета-стайл*/
 }
 
@@ -190,7 +192,7 @@ img {
   text-decoration: none;
   letter-spacing: 0.03em;
   line-height: 1.71;
-  outline: 2px solid olivedrab; /*Репета-стайл*/
+  /*outline: 2px solid olivedrab;*/ /*Репета-стайл*/
 }
 
 .nav-list {
@@ -446,6 +448,7 @@ img {
   padding: 20px 24px;
   border: 1px solid var(--background-card-color);
   background-color: var(--white-bg);
+  box-shadow: var(--card-wrapper-shadow);
 }
 .cards-item-img {
 }
