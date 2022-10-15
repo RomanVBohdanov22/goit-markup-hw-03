@@ -78,15 +78,16 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato; /*Репета-стайл*/
+  /*outline: 2px solid tomato; /*Репета-стайл*/
 }
-.section-dimensions {
-  /*width: 100%;*/
-  /*padding-top: 94px;
+.section-paddings-px {
+  /*.section згідно ТЗ!*/
+  width: 100%;
+  padding-top: 94px;
   padding-bottom: 94px;
-  margin-left: 0px;
+  /*margin-left: 0px;
   margin-right: 0px;*/
-  outline: 2px solid palegreen; /*Репета-стайл*/
+  /*outline: 2px solid palegreen; /*Репета-стайл*/
 }
 /*.contact-list*/
 .o-really-current .current-page-link {
@@ -373,6 +374,7 @@ img {
   width: 270px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: var(--card-wrapper-shadow);
+  border-top: none;
   /*box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);*/
   text-align: center;
@@ -400,8 +402,8 @@ img {
   width: 270px;
 }*/
 .filters {
-  margin-bottom: 94px;
-  padding-top: 94px;
+  /*margin-bottom: 94px;*/
+  /*padding-top: 94px;*/
 }
 .filters-list {
   display: flex;
@@ -459,8 +461,9 @@ img {
 .card-wrapper {
   padding: 20px 24px;
   border: 1px solid var(--background-card-color);
+  border-top: none;
   background-color: var(--white-bg);
-  box-shadow: var(--card-wrapper-shadow);
+  /*box-shadow: var(--card-wrapper-shadow);*/
 }
 .cards-item-img {
 }
