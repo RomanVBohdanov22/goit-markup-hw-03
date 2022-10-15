@@ -78,15 +78,15 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  /*outline: 2px solid tomato; */ /*Репета-стайл*/
+  outline: 2px solid tomato; /*Репета-стайл*/
 }
 .section-dimensions {
   width: 100%;
-  padding-top: 94px;
+  /*padding-top: 94px;
   padding-bottom: 94px;
   margin-left: 0px;
-  margin-right: 0px;
-  /*outline: 2px solid palegreen; */ /*Репета-стайл*/
+  margin-right: 0px;*/
+  outline: 2px solid palegreen; /*Репета-стайл*/
 }
 /*.contact-list*/
 .current-page-link {
@@ -104,7 +104,7 @@ img {
 }
 .nav-contacts-flex {
   margin-left: auto;
-  margin-right: 215px;
+  /*margin-right: none;*/
 }
 
 .contacts-list {
