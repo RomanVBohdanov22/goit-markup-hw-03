@@ -252,6 +252,7 @@ img {
 }
 
 .hero-title {
+  margin-top: 0;
   max-width: 696px;
   margin-bottom: 30px;
   margin-left: auto;
@@ -301,6 +302,7 @@ img {
   width: 270px;
 }
 .feature-title {
+  margin-top: 0;
   margin-bottom: 10px;
   text-transform: uppercase;
   color: var(--fontcolorh3);
@@ -310,16 +312,18 @@ img {
   letter-spacing: 0.03em;
 }
 .feature-text {
+  margin-top: 0;
+  margin-bottom: 0;
   line-height: 1.71;
-  /*width: 270px;*/
   letter-spacing: 0.03em;
 }
 
 .about {
-  margin-top: 0;
-  /*padding-top: 0;*/
+  /*margin-top: 0;*/
+  padding-top: 0;
 }
 .about-title {
+  margin-top: 0;
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.16;
@@ -334,8 +338,10 @@ img {
   gap: 30px;
 }
 .about-item {
+  margin-top: 0;
 }
 .about-image {
+  margin-top: 0;
 }
 
 .features-title,
@@ -360,6 +366,7 @@ img {
   gap: 30px;
 }
 .text-wrapper {
+  margin-top: 0;
   margin-bottom: 0px;
   padding-bottom: 30px;
   padding-top: 30px;
@@ -372,6 +379,8 @@ img {
   background: var(--white-bg);
 }
 .team-person-title {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-size: 16px;
   font-weight: 500;
   color: var(--fontcolorh3);
@@ -380,6 +389,8 @@ img {
 }
 
 .team-person-text {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 16px;
   color: var(--fontcolordescrp);
   line-height: 1.19;
@@ -421,6 +432,7 @@ img {
 .filters-list .filter-button:focus {
   background-color: var(--bluebtn);
   color: var(--whitetxt);
+  box-shadow: var(--card-wrapper-shadow);
   /* box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);*/
 }
@@ -453,6 +465,7 @@ img {
 .cards-item-img {
 }
 .cards-item-title {
+  margin-top: 0;
   margin-bottom: 4px;
   font-size: 18px;
   font-weight: 500;
@@ -461,6 +474,8 @@ img {
   letter-spacing: 0.06em;
 }
 .cards-item-text {
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 16px;
   color: var(--fontcolordescrp);
   line-height: 1.88;
