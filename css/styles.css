@@ -91,8 +91,6 @@ img {
 /*.contact-list*/
 .o-really-current .current-page-link {
   color: var(--bluetextclr);
-  /*opacity: var(--opasity-const);*/
-  /*outline: 2px solid var(--bluetextclr);*/ /*Репета-стайл*/
 }
 
 .header-flex-box,
